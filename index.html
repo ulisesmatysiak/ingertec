@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingertec</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body class="bg-black">
+  <hr>
+    <div class="container bg-black">
+        <div class="row bg-black ">
+            <h1 class="text-white text-center" style="font-style: oblique;"> Ingertec </h1>              
+        </div>
+        <hr>
+        <div class="row justify-content-between">
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="card bg-black">
+                    <img src="images/box-1.png" class="card-img-top" alt="BUSINESS SOLUTION" onclick="imgImpar(1)">                   
+                    <div class="card-body">                   
+                      <p class="card-text text-white">El sistema diseñado para brindar soluciones a pequeñas, medianas o grandes empresas.</p>  
+                      <div class="icon-container">
+                        <i class="fas fa-heart text-danger"></i>
+                        <span id="counter-1" class="text-white">0</span>
+                      </div>                     
+                    </div>                        
+                  </div>
+            </div>          
+
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="card bg-black">
+                    <img src="images/box-2.png" class="card-img-top" alt="SISTEMA DE SUPERVISIÓN Y CONTROL" onclick="imgPar(2)">
+                    <div class="card-body">  
+                      <p class="card-text text-white">Centralice el manejo de la información de su empresa.</p>
+                      <div class="icon-container">
+                        <i class="fas fa-heart text-danger"></i>
+                        <span id="counter-2" class="text-white">0</span>
+                      </div>                        
+                  </div>
+                </div>           
+            </div>          
+
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="card bg-black">
+                    <img src="images/box-3.png" class="card-img-top" alt="EVO SCADA SERVER" onclick="imgImpar(3)">
+                    <div class="card-body">  
+                      <p class="card-text text-white">La aplicación que le brinda el control total sobre los nodos de su organización.</p>    
+                      <div class="icon-container">
+                        <i class="fas fa-heart text-danger"></i>
+                        <span id="counter-3" class="text-white">0</span>
+                      </div>                     
+                  </div>      
+                </div>               
+            </div>          
+
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="card bg-black">
+                    <img src="images/box-4.png" class="card-img-top" alt="INTERACTIVE VOICE RESPONSE" onclick="imgPar(4)">
+                    <div class="card-body">                   
+                      <p class="card-text text-white">Ahora incorpore la gestión telefónica dentro de su base de datos en forma dinámica.</p>  
+                      <div class="icon-container">
+                        <i class="fas fa-heart text-danger"></i>
+                        <span id="counter-4" class="text-white">0</span>
+                      </div>                
+                  </div>                  
+                </div>               
+            </div>          
+
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="card bg-black">
+                    <img src="images/box-5.png" class="card-img-top" alt="FACTORY SCADA" onclick="imgImpar(5)">
+                    <div class="card-body">                   
+                      <p class="card-text text-white">La aplicación que le brinda el control total sobre los automatismos de su empresa.</p>   
+                      <div class="icon-container">
+                        <i class="fas fa-heart text-danger"></i>
+                        <span id="counter-5" class="text-white">0</span>                 
+                      </div>                     
+                    </div>                            
+                </div>
+            </div>          
+        </div>
+
+        <div class="modal fade" id="modalImagen" tabindex="-1" aria-labelledby="modalImagenLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered bg-black">
+            <div class="modal-content bg-black">
+              <div class="modal-body bg-black">
+                <img id="modalImagenSrc" src="images/box-2.png" alt="">             
+                <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal" aria-label="Close" onclick="cerrarModal()">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+
+
+        <div class="row">
+          <div class="col-md-4">
+            <hr>
+          <textarea id="textArea" class="w-100" rows="4" cols="50" readonly></textarea>
+          <hr>
+          <button id="btnCargarTexto" class="btn btn-outline-secondary" onclick="cargarTexto()">Cargar Texto</button>   
+          </div>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
